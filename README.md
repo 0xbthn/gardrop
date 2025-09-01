@@ -1,10 +1,14 @@
-# 🔒 Advanced APK Security Analysis Tool
+# Gardrop
+
+![Gardrop Banner](gardroployd.png)
+
+
 
 A comprehensive, feature-rich static security analysis tool for Android APK, XAPK, and AAB files. This tool provides deep security analysis, compliance checking, and detailed reporting capabilities.
 
-## 🌟 Features
+## Features
 
-### 🔍 **Core Analysis**
+### **Core Analysis**
 - **APK Structure Analysis** - Complete file structure and integrity analysis
 - **AndroidManifest.xml Analysis** - Deep manifest inspection and security assessment
 - **DEX Code Analysis** - Bytecode analysis and vulnerability detection
@@ -12,13 +16,13 @@ A comprehensive, feature-rich static security analysis tool for Android APK, XAP
 - **Assets & Resources Analysis** - Resource file security assessment
 - **Hardcoded Secrets Detection** - Advanced pattern matching for sensitive data
 
-### 🛡️ **Advanced Security Modules**
+### **Advanced Security Modules**
 - **Certificate & Signing Analysis** - Certificate validation and signing scheme verification
 - **Network Security Analysis** - Network configuration and communication security
 - **Code Quality Analysis** - Complexity metrics, code smells, and quality assessment
 - **Permissions Analysis** - Comprehensive permission usage and risk assessment
 
-### 📊 **Reporting & Visualization**
+### **Reporting & Visualization**
 - **Interactive HTML Dashboard** - Beautiful, interactive reports with charts
 - **Executive Summary** - High-level security assessment for stakeholders
 - **Technical Reports** - Detailed technical analysis for developers
@@ -26,7 +30,7 @@ A comprehensive, feature-rich static security analysis tool for Android APK, XAP
 - **Comparison Reports** - Compare multiple analysis results
 - **Multiple Export Formats** - JSON, CSV, HTML export options
 
-### ⚙️ **Advanced Features**
+### **Advanced Features**
 - **Configurable Analysis** - Customizable analysis settings via JSON config
 - **Quick Mode** - Fast analysis for initial assessment
 - **Module Selection** - Run specific analysis modules only
@@ -34,7 +38,7 @@ A comprehensive, feature-rich static security analysis tool for Android APK, XAP
 - **Compliance Checking** - Built-in compliance standards validation
 - **Vulnerability Database** - Structured vulnerability tracking
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 ```bash
@@ -46,18 +50,18 @@ sudo apt-get install python3 python3-pip binutils file
 # Download from: https://developer.android.com/studio
 # Add to PATH: ~/Android/Sdk/tools and ~/Android/Sdk/platform-tools
 
-# Install additional tools (optional)
 sudo apt-get install apktool dex2jar
 ```
 
 ### Tool Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mobile-tools.git
-cd mobile-tools
+git clone https://github.com/0xbthn/gardrop.git
+cd gardrop
 
 # Install Python dependencies (none required - uses standard library)
 # pip install -r requirements.txt
+# Read requirements.txt
 
 # Make executable
 chmod +x apk_analyzer.py
@@ -127,14 +131,7 @@ Create a `config.json` file to customize analysis settings:
 The tool generates comprehensive reports in the output directory:
 
 ### 📁 **Generated Files**
-- `security_analysis.json` - Complete analysis results
 - `security_report.html` - Basic HTML report
-- `security_summary.txt` - Executive summary
-- `interactive_dashboard.html` - Interactive dashboard with charts
-- `executive_summary.html` - Stakeholder-friendly summary
-- `compliance_report.html` - Compliance assessment
-- `vulnerability_database.json` - Structured vulnerability data
-- `analysis_results.csv` - CSV export (if requested)
 
 ### 📈 **Dashboard Features**
 - **Security Score Visualization** - Overall security assessment
@@ -233,15 +230,15 @@ The tool generates comprehensive reports in the output directory:
                                         \/     \/           \/              |__|                     
                                                         (0xbthn)
 
-[1/12] 📁 APK Structure Analysis
+[1/13] 📁 APK Structure Analysis
 ────────────────────────────────────────────────────────
 [SUCCESS] Step completed successfully!
 
-[2/12] 📋 AndroidManifest.xml Analysis
+[2/13] 📋 AndroidManifest.xml Analysis
 ────────────────────────────────────────────────────────
 [SUCCESS] Step completed successfully!
 
-[3/12] 🔍 DEX Code Analysis
+[3/13] 🔍 DEX Code Analysis
 ────────────────────────────────────────────────────────
 [SUCCESS] Step completed successfully!
 
@@ -262,26 +259,19 @@ Generated Reports:
 
 Analysis completed successfully!
 ```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 ### Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mobile-tools.git
-cd mobile-tools
+git clone https://github.com/0xbthn/gardrop.git
+cd gardrop
 
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install development dependencies
-pip install -r requirements-dev.txt
+pip install -r requirements.txt
 
-# Run tests
-python -m pytest tests/
 ```
 
 ## 📄 License
@@ -321,3 +311,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ for the security community**
+**Currently repo is being developed. You can throw PR for your mistakes and ideas you encounter**
