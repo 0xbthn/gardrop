@@ -1,0 +1,58 @@
+# Advanced APK Static Analysis Tool Requirements
+# Core Python libraries (usually included)
+# - os
+# - sys
+# - argparse
+# - json
+# - subprocess
+# - pathlib
+# - xml.etree.ElementTree
+# - zipfile
+# - re
+# - base64
+# - datetime
+# - csv
+# - traceback
+
+# External dependencies (install with: pip install -r requirements.txt)
+# None required! This tool uses only Python standard library.
+
+# Optional external tools that enhance analysis:
+# - aapt (Android Asset Packaging Tool)
+# - apktool
+# - dexdump (from Android SDK)
+# - d2j-dex2jar
+# - readelf, nm, objdump (binary analysis tools)
+# - strings
+# - file
+# - keytool (for certificate analysis)
+# - apksigner (for signing verification)
+
+# Installation instructions for external tools:
+# 1. Install Android SDK and add tools to PATH
+# 2. Install apktool: https://ibotpeaches.github.io/Apktool/
+# 3. Install dex2jar: https://github.com/pxb1988/dex2jar
+# 4. For Linux: sudo apt-get install binutils file
+# 5. For certificate analysis: Install Java JDK (includes keytool)
+# 6. For signing verification: Install Android SDK Build Tools (includes apksigner)
+
+# Advanced Features:
+# - Interactive HTML dashboards with Chart.js
+# - Compliance checking (OWASP, GDPR, PCI DSS)
+# - Code quality analysis
+# - Network security analysis
+# - Certificate and signing analysis
+# - Comparison reports
+# - Multiple export formats (JSON, CSV, HTML)
+# - Configurable analysis settings
+
+# Usage Examples:
+# python apk_analyzer.py app.apk                           # Basic analysis
+# python apk_analyzer.py app.xapk -o detailed_report      # Custom output
+# python apk_analyzer.py app.apk --verbose --quick         # Quick analysis
+# python apk_analyzer.py app.apk --compare previous.json   # Compare results
+# python apk_analyzer.py app.apk --export csv              # Export to CSV
+# python apk_analyzer.py app.apk --compliance gdpr,owasp   # Check compliance
+# python apk_analyzer.py app.apk --config config.json      # Use custom config
+
+# pip install -r requirements.txt

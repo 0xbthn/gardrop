@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "quick_mode": false,
+    "threads": 4,
+    "timeout": 300,
+    "skip_modules": [],
+    "only_modules": []
+  },
+  "security": {
+    "severity_thresholds": {
+      "high": 8,
+      "medium": 5,
+      "low": 2
+    },
+    "enable_advanced_checks": true,
+    "check_obfuscation": true,
+    "check_debug": true,
+    "check_backup": true
+  },
+  "network": {
+    "check_cleartext": true,
+    "check_certificate_pinning": true,
+    "check_domain_verification": true,
+    "allowed_domains": [],
+    "blocked_domains": []
+  },
+  "certificates": {
+    "check_expiration": true,
+    "check_weak_algorithms": true,
+    "check_signing_schemes": true,
+    "allowed_issuers": [],
+    "blocked_issuers": []
+  },
+  "code_quality": {
+    "complexity_threshold": 10,
+    "nesting_threshold": 5,
+    "method_length_threshold": 50,
+    "class_length_threshold": 500,
+    "check_duplication": true,
+    "check_dead_code": true
+  },
+  "secrets": {
+    "patterns": [
+      "password\\s*=\\s*[\"'][^\"']+[\"']",
+      "api_key\\s*=\\s*[\"'][^\"']+[\"']",
+      "token\\s*=\\s*[\"'][^\"']+[\"']",
+      "secret\\s*=\\s*[\"'][^\"']+[\"']",
+      "key\\s*=\\s*[\"'][^\"']+[\"']"
+    ],
+    "exclude_patterns": [
+      "test",
+      "example",
+      "dummy"
+    ]
+  },
+  "permissions": {
+    "dangerous_permissions": [
+      "android.permission.READ_CONTACTS",
+      "android.permission.WRITE_CONTACTS",
+      "android.permission.READ_CALENDAR",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.READ_SMS",
+      "android.permission.SEND_SMS",
+      "android.permission.RECEIVE_SMS",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.CALL_PHONE",
+      "android.permission.READ_CALL_LOG",
+      "android.permission.WRITE_CALL_LOG",
+      "android.permission.ADD_VOICEMAIL",
+      "android.permission.USE_SIP",
+      "android.permission.PROCESS_OUTGOING_CALLS",
+      "android.permission.BODY_SENSORS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_COARSE_LOCATION"
+    ],
+    "sensitive_permissions": [
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.INSTALL_PACKAGES",
+      "android.permission.DELETE_PACKAGES"
+    ]
+  },
+  "compliance": {
+    "owasp_mobile_top_10": {
+      "enabled": true,
+      "strict_mode": false
+    },
+    "gdpr": {
+      "enabled": true,
+      "check_data_minimization": true,
+      "check_consent": true,
+      "check_protection": true
+    },
+    "pci_dss": {
+      "enabled": false,
+      "check_card_data": true,
+      "check_encryption": true
+    },
+    "iso_27001": {
+      "enabled": false,
+      "check_access_control": true,
+      "check_cryptography": true
+    }
+  },
+  "reporting": {
+    "formats": ["json", "html", "txt"],
+    "include_charts": true,
+    "include_recommendations": true,
+    "include_remediation": true,
+    "custom_css": "",
+    "company_logo": "",
+    "contact_info": ""
+  },
+  "export": {
+    "csv_separator": ",",
+    "include_timestamps": true,
+    "include_metadata": true,
+    "compress_output": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "apk_analyzer.log",
+    "max_size": "10MB",
+    "backup_count": 5
+  }
+} 
